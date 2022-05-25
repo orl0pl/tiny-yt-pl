@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+
+        body {
+            font-family: 'Roboto','Montserrat'
+        }
+
+        .vids-item {
+            padding: 0.5vh 1vw;
+        }
+
+        .vids-container {
+            margin: 1vh 1vw;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vids-item * {
+            max-width: 22vw;
+        }
+
+        min {
+            display: inline-block;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="title">POPCORN</div><input type="text" placeholder="Szukaj"><button>🔎</button><h6 style="margin: 0;"><a href="../account">Konto</a></h6>
+      </div>
+    <div class="vids-container">
+        {{#each video}}
+        <div class="vids-item">
+            <img src="/api/vid/photo/{{id}}/"><br>
+            <b class="title">{{title}}</b><br>
+            <min>Wyświetlenia {{viewsf}} - {{timef}}<br></min><br><b>{{author}}</b>
+        </div>
+        {{/each}}
+    </div>
+</body>
+
+</html>

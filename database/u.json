@@ -1,0 +1,13 @@
+[
+    {
+        "login": "admin",
+        "password": "$2a$12$UBNrpReYc3Yg937lTAfsMugWY7S6WFppXu4VfpOSTWnt/AlZna8yG",
+        "data": {
+            "name": "test",
+            "description": "test",
+            "videos": [
+                0
+            ]
+        }
+    }
+]

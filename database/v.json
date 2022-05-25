@@ -1,0 +1,43 @@
+[
+    {
+        "id": 0,
+        "tags": ["popcorn", "test"],
+        "title": "Test",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aliquam eligendi, vero dolore nemo illo officia unde? Blanditiis id, natus in exercitationem ducimus fugiat magni molestiae dolores reiciendis, culpa corporis?",
+        "views": 1,
+        "time": {
+          "formated": "Dzisiaj 18:37"
+        },
+        "like": 6,
+        "dislike": 9,
+        "comments": [
+          {
+            "author": "John",
+            "data": "coś tam",
+            "time": {
+              "formated": "Wczoraj"
+            },
+            "like": 1,
+            "report": []
+          },
+          {
+            "author": "John",
+            "data": "coś tam",
+            "time": {
+              "formated": "Wczoraj"
+            },
+            "like": 1,
+            "report": []
+          },
+          {
+            "author": "John",
+            "data": "coś tam",
+            "time": {
+              "formated": "Wczoraj"
+            },
+            "like": 1,
+            "report": []
+          }
+        ]
+      }
+]

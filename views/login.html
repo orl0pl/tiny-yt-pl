@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    body {font-family: 'Monsertat' }
+    </style>
+</head>
+
+<body>
+    <form action="localhost:2222/api/accounts/login" method="post">
+        <h1>Zaloguj się</h1>
+        <input type="text" placeholder="Login" name="login"><br>
+        <input type="password" placeholder="Hasło" name="password"><br>
+        {{#if error}}<span style="color:red">{{error}}</span>{{/if}}
+        <button type="submit">Zaloguj się</button>
+    </form>
+
+</body>
+
+</html>
